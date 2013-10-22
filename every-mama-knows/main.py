@@ -33,7 +33,7 @@ class MainHandler(webapp2.RequestHandler):
             'templateVar': greetings,
         }
         
-        template = JINJA_ENVIRONMENT.get_template('index.html')
+        template = JINJA_ENVIRONMENT.get_template('/html/homepage.html')
         self.response.write(template.render(template_values))
 
 app = webapp2.WSGIApplication([
