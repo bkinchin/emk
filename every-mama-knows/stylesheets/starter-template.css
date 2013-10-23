@@ -5,3 +5,11 @@ body {
   padding: 40px 15px;
   text-align: center;
 }
+.center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.centerb {
+  margin: 0 auto;
+}
