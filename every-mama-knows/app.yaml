@@ -21,6 +21,12 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /upload/.*
+  script: upload.app
+
+- url: /serve/.*
+  script: upload.app
+
 - url: .*
   script: main.app
 
