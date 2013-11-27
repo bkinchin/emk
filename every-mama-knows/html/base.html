@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% autoescape true %}
-<html lang="en">
+<html lang="en" ng-app="phonecatApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,9 @@
     <meta name="author" content="">
 
     <title>Every Mama Knows</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular.min.js"></script>
+    <script src="/javascript/controllers.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -27,7 +30,7 @@
       <script src="/bootstrap/docs-assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body> 
+  <body ng-controller="PhoneListCtrl"> 
   
   <div class="container">
   	<div class="row">

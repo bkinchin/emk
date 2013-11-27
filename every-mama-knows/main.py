@@ -35,7 +35,19 @@ class MainHandler(webapp2.RequestHandler):
         
         template = JINJA_ENVIRONMENT.get_template('/html/homepage.html')
         self.response.write(template.render(template_values))
+        
+class Angular(webapp2.RequestHandler):
+    def get(self, thing):
+        #self.response.write('Hello world!')
+        greetings = 'hello Billy'
+        template_values = {
+            'templateVar': greetings,
+        }
+        
+        template = JINJA_ENVIRONMENT.get_template('/html/angular.html')
+        self.response.write(template.render(template_values))
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
+    ('/', MainHandler),
+    ('/angular/(.*)', Angular)
 ], debug=True)
