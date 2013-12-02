@@ -10,8 +10,19 @@
 
     <title>Every Mama Knows</title>
     
+    <!-- jQuery is used for JavaScript animations (include this before angular.js) -->
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular-animate.min.js"></script>
     <script src="/javascript/controllers.js"></script>
+    <script src="/javascript/app.js"></script>
+    <script src="/javascript/filters.js"></script>
+    <script src="/javascript/services.js"></script>
+    <script src="/javascript/animations.js"></script>
+    <link href="/stylesheets/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/animations.css">
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -30,7 +41,7 @@
       <script src="/bootstrap/docs-assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body ng-controller="PhoneListCtrl"> 
+  <body> 
   
   <div class="container">
   	<div class="row">

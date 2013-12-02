@@ -11,8 +11,14 @@ handlers:
 - url: /stylesheets
   static_dir: stylesheets
   
+- url: /templates
+  static_dir: templates
+  
 - url: /javascript
   static_dir: javascript
+  
+- url: /json
+  static_dir: json
   
 - url: /images
   static_dir: images
